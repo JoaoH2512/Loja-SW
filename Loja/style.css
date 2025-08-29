@@ -1,0 +1,177 @@
+/* ======= RESET ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======= BODY ======= */
+body {
+    background-color: #f4f4f4; /* Fundo neutro claro */
+    color: #333; /* Texto escuro e legível */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ======= CABEÇALHO ======= */
+h1 {
+    text-align: center;
+    color: #2a2a2a; /* Cor neutra para o título */
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: #666; /* Cor suave para o subtítulo */
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* ======= CONTAINER PRINCIPAL ======= */
+.container {
+    background: #fff; /* Fundo branco para contraste limpo */
+    padding: 30px;
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* ======= BOTÕES ======= */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px; /* Bordas levemente arredondadas */
+}
+
+/* Botão dourado */
+.btn-danger {
+    background: #d4af37;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #b9962b;
+}
+
+/* Botão com borda dourada */
+.btn-warning {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+}
+
+.btn-warning:hover {
+    background: #d4af37;
+    color: #fff;
+}
+
+/* ======= TABELA ======= */
+.table {
+    width: 100%;
+    color: #333;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.table td {
+    padding: 12px;
+    background-color: #f9f9f9; /* Fundo claro para as células */
+    border-bottom: 1px solid #ddd;
+}
+
+/* ======= FORMULÁRIO ======= */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-control {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.form-control:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+/* Botão do formulário */
+button[type="submit"] {
+    background-color: #d4af37;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: #b9962b;
+}
+
+/* ======= LINKS ======= */
+a {
+    text-decoration: none;
+    color: #d4af37;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b9962b;
+}
+
+/* Tabela com texto suave */
+.table tbody td {
+    color: #666;
+}
