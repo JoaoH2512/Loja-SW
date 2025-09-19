@@ -7,8 +7,8 @@
 
 /* ======= BODY ======= */
 body {
-    background-color: #f4f4f4; /* Fundo neutro claro */
-    color: #333; /* Texto escuro e legível */
+    background-color: #f4f6fb; /* Azul bem claro */
+    color: #333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
 /* ======= CABEÇALHO ======= */
 h1 {
     text-align: center;
-    color: #2a2a2a; /* Cor neutra para o título */
+    color: #1e3a8a; /* Azul forte */
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 10px;
@@ -30,66 +30,83 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #666; /* Cor suave para o subtítulo */
+    color: #475569; /* Azul acinzentado */
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
 /* ======= CONTAINER PRINCIPAL ======= */
 .container {
-    background: #fff; /* Fundo branco para contraste limpo */
+    background: #fff;
     padding: 30px;
-    border: 1px solid #e0e0e0; /* Borda sutil */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #e0e7ff; /* Azul bem claro */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     max-width: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    border-radius: 8px;
 }
 
 /* ======= BOTÕES ======= */
 .btn-group {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     width: 100%;
 }
 
 .btn {
+    flex: 1; /* garante que ambos os botões tenham o mesmo tamanho */
+    max-width: 250px; /* limita o comprimento pra não esticar demais */
     font-weight: 600;
     font-size: 1rem;
-    padding: 12px 25px;
+    padding: 14px 25px;
     text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    cursor: pointer;
+    border-radius: 6px;
     border: none;
-    border-radius: 4px; /* Bordas levemente arredondadas */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
 }
 
-/* Botão dourado */
+/* Botão azul preenchido */
 .btn-danger {
-    background: #d4af37;
+    background: #2563eb;
     color: #fff;
 }
 
 .btn-danger:hover {
-    background: #b9962b;
+    background: #1e40af;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    filter: brightness(1.08); /* efeito de brilho */
 }
 
-/* Botão com borda dourada */
+/* Botão azul contornado */
 .btn-warning {
     background: transparent;
-    color: #d4af37;
-    border: 2px solid #d4af37;
+    color: #2563eb;
+    border: 2px solid #2563eb;
 }
 
 .btn-warning:hover {
-    background: #d4af37;
+    background: #2563eb;
     color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    filter: brightness(1.08);
 }
+
+/* Efeito de "pressionar" quando clica */
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    filter: brightness(0.98);
+}
+
 
 /* ======= TABELA ======= */
 .table {
@@ -99,11 +116,11 @@ h2 {
     text-align: center;
     border-radius: 6px;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid #cbd5e1;
 }
 
 .table th {
-    background-color: #d4af37;
+    background-color: #2563eb;
     color: #fff;
     padding: 12px;
     font-size: 1rem;
@@ -112,8 +129,8 @@ h2 {
 
 .table td {
     padding: 12px;
-    background-color: #f9f9f9; /* Fundo claro para as células */
-    border-bottom: 1px solid #ddd;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 /* ======= FORMULÁRIO ======= */
@@ -127,7 +144,7 @@ form {
 .form-control {
     background-color: #fff;
     color: #333;
-    border: 1px solid #ccc;
+    border: 1px solid #cbd5e1;
     border-radius: 4px;
     padding: 12px;
     font-size: 1rem;
@@ -135,17 +152,18 @@ form {
 }
 
 .form-control::placeholder {
-    color: #888;
+    color: #94a3b8;
 }
 
 .form-control:focus {
-    border-color: #d4af37;
+    border-color: #2563eb;
     outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.2);
 }
 
 /* Botão do formulário */
 button[type="submit"] {
-    background-color: #d4af37;
+    background-color: #2563eb;
     color: #fff;
     font-size: 1.1rem;
     padding: 12px;
@@ -157,21 +175,21 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #b9962b;
+    background-color: #1e40af;
 }
 
 /* ======= LINKS ======= */
 a {
     text-decoration: none;
-    color: #d4af37;
+    color: #2563eb;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #b9962b;
+    color: #1e40af;
 }
 
-/* Tabela com texto suave */
+/* Texto da tabela mais suave */
 .table tbody td {
-    color: #666;
+    color: #475569;
 }
